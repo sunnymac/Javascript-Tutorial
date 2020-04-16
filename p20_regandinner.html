@@ -1,0 +1,40 @@
+<html>
+   <body> 
+    <form>
+        Enter Mobile No: <input type="text" id="mytext" >
+          <label id="lbl1" style="visibility: hidden">Any text</label>
+         <button type="button"  onclick="f();">Submit</button>   
+        </form>         
+    <script>
+       // demo of regular expression and inner html with mobile no validation
+                
+        function f()
+        {
+        var i;
+      
+        i=document.getElementById("mytext");
+              var regx = /^[6-9][0-9]{9}$/;
+         
+            if(regx.test(i.value))
+                {
+              document.getElementById("lbl1").innerHTML="Valid";
+              document.getElementById("lbl1").style.visibility="visible";
+              document.getElementById("lbl1").style.color="green";
+                  
+                }
+            else
+                {
+                    
+                document.getElementById("lbl1").innerHTML="invalid";
+                document.getElementById("lbl1").style.visibility="visible";
+                document.getElementById("lbl1").style.color="red";
+                    
+                }
+           
+        
+        }
+        
+    </script>
+    
+   </body>
+</html>

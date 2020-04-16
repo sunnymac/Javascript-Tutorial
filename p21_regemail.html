@@ -1,0 +1,48 @@
+<html>
+   <body> 
+    <form>
+        Enter Email id <input type="text" id="mytext" >
+          <label id="lbl1" style="visibility: hidden">Any text</label>
+         <button type="button"  onclick="f();">Submit</button>   
+        </form>         
+    <script>
+       // Email validation using java script
+                
+        function f()
+        {
+        var i;
+      
+        i=document.getElementById("mytext");
+            
+            
+        // user@domain.extention.extention
+        // sunny@gmail.com
+            
+        var regx= /^([a-z0-9\.\_]+)@([a-z0-9-]+).([a-z]{2,10})(.[a-z]{2,10})?$/;
+            
+          
+            if(regx.test(i.value))
+                {
+                    
+                
+              document.getElementById("lbl1").innerHTML="Valid";
+              document.getElementById("lbl1").style.visibility="visible";
+              document.getElementById("lbl1").style.color="green";
+                  
+                }
+            else
+                {
+                    
+                document.getElementById("lbl1").innerHTML="invalid";
+                document.getElementById("lbl1").style.visibility="visible";
+                document.getElementById("lbl1").style.color="red";
+                    
+                }
+           
+        
+        }
+        
+    </script>
+    
+   </body>
+</html>

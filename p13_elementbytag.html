@@ -1,0 +1,23 @@
+<html>
+   <body> 
+       
+       Enter Name : <input type="text" id="mytext"  name="myname">
+       Last Name :<input type="text" id="mytext"  name="myname">
+       
+       <button onclick="f()">Click me</button>
+              
+        <script>
+       
+        function f()
+        {
+        var n;
+        
+        n=document.getElementsByTagName("input")[0];
+        m=document.getElementsByTagName("input")[1];
+        alert(n.value + m.value);
+        }
+        
+    </script>
+    
+   </body>
+</html>

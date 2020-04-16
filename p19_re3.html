@@ -1,0 +1,40 @@
+<html>
+   <body> 
+    <form  onsubmit="f()">
+        Enter Name : <input type="text" id="mytext" >
+          
+         <button type="submit" >Submit</button>   
+        </form>         
+    <script>
+       
+        function f()
+        {
+        var i;
+      
+        i=document.getElementById("mytext");
+      
+               
+                  // var regx = /S/ig;
+            
+           // regx = new RegExp("S","ig");
+             // var regx = /[sm]unny/;
+            // var regx = /[a-e]unny/; 
+             //var regx = /[a-e]unn[xyz]/; 
+             // var regx = /[^a-e]unn[xyz]/; 
+            if(regx.test(i.value))
+                {
+                 alert("valid"); 
+                  
+                }
+            else
+                {
+                    alert("invalid");
+                }
+           
+        
+        }
+        
+    </script>
+    
+   </body>
+</html>

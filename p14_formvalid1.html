@@ -1,0 +1,33 @@
+<!--Form validation version 1 -->
+
+<html>
+   <body> 
+    
+                                           
+   <form action="home.html">
+          Enter Name : <input type="text" id="mytext" > <br><br>
+        Enter Password : <input type="password" id="mypass" >
+       
+         <button type="submit" onclick="f();">Submit</button>   
+        </form>      
+    <script>
+       
+        function f()
+        {
+        var i,p;
+        
+        i=document.getElementById("mytext");
+        p=document.getElementById("mypass");
+            
+            if(i.value=="" || p.value=="")
+            {
+                alert("blank value not allowed");
+                
+            }
+        
+        }
+        
+    </script>
+    
+   </body>
+</html>

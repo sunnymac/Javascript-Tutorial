@@ -1,0 +1,36 @@
+<html>
+   <body> 
+    <form  onsubmit="f()">
+        Enter Name : <input type="text" id="mytext" >
+          
+         <button type="submit" >Submit</button>   
+        </form>         
+    <script>
+       
+        function f()
+        {
+        var i,p;
+      
+        i=document.getElementById("mytext");
+      
+              // var regx = /S/;
+              // var regx = /S/i;
+                    var regx = /S/ig;
+            
+            if(regx.test(i.value))
+                {
+                 alert("your name start with s"); 
+                  
+                }
+            else
+                {
+                    alert("Your name do not start with s");
+                }
+           
+        
+        }
+        
+    </script>
+    
+   </body>
+</html>
